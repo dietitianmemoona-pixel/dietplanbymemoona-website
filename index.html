@@ -537,7 +537,7 @@ body.has-banner .hero{padding-top:150px;}
         <input type="number" id="bmi-weight" placeholder="e.g. 70" min="20" max="300">
       </div>
       <div class="checkout-field">
-        <label>Height (cm)</label>
+        <label>Height (ft)</label>
         <input type="number" id="bmi-height" placeholder="e.g. 165" min="100" max="250">
       </div>
     </div>
@@ -581,7 +581,7 @@ body.has-banner .hero{padding-top:150px;}
         <input type="number" id="cal-weight" placeholder="e.g. 65" min="20" max="300">
       </div>
       <div class="checkout-field">
-        <label>Height (cm)</label>
+        <label>Height (ft)</label>
         <input type="number" id="cal-height" placeholder="e.g. 160" min="100" max="250">
       </div>
     </div>
@@ -658,7 +658,7 @@ body.has-banner .hero{padding-top:150px;}
     <div class="modal-sub">Based on the Devine formula used in clinical settings.</div>
     <div class="form-row">
       <div class="checkout-field">
-        <label>Height (cm)</label>
+        <label>Height (ft)</label>
         <input type="number" id="iw-height" placeholder="e.g. 165" min="100" max="250">
       </div>
       <div class="checkout-field">
@@ -754,7 +754,7 @@ body.has-banner .hero{padding-top:150px;}
       <div class="form-row">
         <div class="checkout-field">
           <label>WhatsApp Number *</label>
-          <input type="tel" id="co-phone" placeholder="+92 300 XXXXXXX">
+          <input type="tel" id="co-phone" placeholder="+92 3420996070">
         </div>
         <div class="checkout-field">
           <label>Email Address</label>
@@ -1049,7 +1049,7 @@ function submitCheckout() {
   const city = document.getElementById('co-city').value.trim();
   const notes = document.getElementById('co-notes').value.trim();
   const msg = `Hi LetsNutriate! I'd like to book a consultation.%0AName: ${encodeURIComponent(name)}%0APlan: ${encodeURIComponent(plan)} (${encodeURIComponent(duration)})%0ACity: ${encodeURIComponent(city||'Not specified')}%0ANotes: ${encodeURIComponent(notes||'None')}`;
-  window.open(`https://wa.me/923000000000?text=${msg}`, '_blank');
+  window.open(`https://wa.me/923420996070?text=${msg}`, '_blank');
   document.getElementById('checkout-form-wrap').style.display = 'none';
   document.getElementById('checkout-success').style.display = 'block';
 }
