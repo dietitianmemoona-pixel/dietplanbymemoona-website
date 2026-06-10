@@ -1,0 +1,59 @@
+/* =========================================================
+   Thumbnails — reusable image card styles
+   ========================================================= */
+
+.thumbs-section { padding: 48px 0; background: var(--color-cream, #fbf7ee); }
+
+.thumb-row {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.thumb-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(20, 40, 25, 0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+  cursor: pointer;
+}
+.thumb-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(20, 40, 25, 0.15);
+}
+.thumb-card .thumb-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: #eee;
+}
+.thumb-card .thumb-body { padding: 12px 14px 16px; }
+.thumb-card .thumb-title { font-weight: 700; margin: 0 0 4px; color: #1d2a1f; font-size: .95rem; }
+.thumb-card .thumb-meta { font-size: .8rem; color: #5b6960; }
+
+/* Variant: round avatar thumbs */
+.thumb-avatar {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-accent, #d4a23a);
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+/* Variant: wide banner thumbs */
+.thumb-wide {
+  aspect-ratio: 16 / 9 !important;
+}
+
+/* Overlay badge */
+.thumb-card { position: relative; }
+.thumb-badge {
+  position: absolute; top: 10px; left: 10px;
+  background: var(--color-accent, #d4a23a);
+  color: #2a1d05;
+  font-size: .7rem; font-weight: 700;
+  padding: 4px 10px; border-radius: 999px;
+  text-transform: uppercase; letter-spacing: .05em;
+}
