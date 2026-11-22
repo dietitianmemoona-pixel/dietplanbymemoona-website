@@ -3,7 +3,7 @@ const crypto = require('crypto');
 const db = require('../db');
 const router = express.Router();
 
-const WHEEL = [10, 20, 0, 15, 0, 30, 10, 0]; // % off; 0 = try again
+const WHEEL = [10, 05, 0, 15, 0, 05, 10, 0]; // % off; 
 
 router.post('/spin', (req, res) => {
   const { email } = req.body || {};
